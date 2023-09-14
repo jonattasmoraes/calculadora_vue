@@ -23,7 +23,7 @@
     </div>
 
     <div>
-      <h2>Resultado: {{ resultado }}</h2>
+      <h2>Resultado: <span>{{ resultado }}</span></h2>
     </div>
   </div>
 </template>
@@ -76,7 +76,7 @@ export default {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #2c3e50;
+  color: #417cb7;
   margin-top: 60px;
 }
 
@@ -97,5 +97,9 @@ select {
 
 h2 {
   margin-top: 20px;
+}
+
+span {
+  color: #2e353b;
 }
 </style>
