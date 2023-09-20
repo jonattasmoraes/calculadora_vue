@@ -41,13 +41,13 @@ export default {
   methods: {
     validarNumero1() {
       if (this.numero1 < 1) {
-        this.numero1 = 1;
+        this.numero1 = none;
       }
       this.calcularResultado();
     },
     validarNumero2() {
       if (this.numero2 < 1) {
-        this.numero2 = 1;
+        this.numero2 = none;
       }
       this.calcularResultado();
     },
