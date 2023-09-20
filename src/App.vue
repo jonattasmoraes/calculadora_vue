@@ -41,15 +41,15 @@ export default {
   methods: {
     validarNumero1() {
       if (this.numero1 < 0) {
-        alert('O número valor deve ser positivo.');
-        this.numero1 = none;
+        alert('O valor deve ser positivo.');
+        this.numero1 = 0;
       }
       this.calcularResultado();
     },
     validarNumero2() {
       if (this.numero2 < 0) {
-        alert('O número valor deve ser positivo.');
-        this.numero2 = none;
+        alert('O valor deve ser positivo.');
+        this.numero2 = 0;
       }
       this.calcularResultado();
     },
