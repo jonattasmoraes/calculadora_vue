@@ -53,24 +53,17 @@ export default {
       }
       this.calcularResultado();
     },
-    calcularResultado() {
-      switch (this.operacao) {
-        case 'soma':
-          this.resultado = this.numero1 + this.numero2;
-          break;
-        case 'subtracao':
-          this.resultado = this.numero1 - this.numero2;
-          break;
-        case 'multiplicacao':
-          this.resultado = this.numero1 * this.numero2;
-          break;
-        case 'divisao':
-          this.resultado = this.numero1 / this.numero2;
-          break;
-        default:
-          this.resultado = 0;
-      }
-    },
+calcularResultado() {
+  const operations = {
+    'soma': () => this.numero1 + this.numero2,
+    'subtracao': () => this.numero1 - this.numero2,
+    'multiplicacao': () => this.numero1 * this.numero2,
+    'divisao': () => this.numero1 / this.numero2,
+  };
+
+  const operationFunc = operations[this.operacao] || (() => 0);
+  this.resultado = operationFunc();
+}
   },
 };
 </script>
